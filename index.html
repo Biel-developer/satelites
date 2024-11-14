@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Robot Bobby Earth</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
+  <style>
+    body {
+      margin: 0;
+    }
+  </style>
+  <script type="importmap">
+			{
+				"imports": {
+					"three": "https://cdn.jsdelivr.net/npm/three@0.161/build/three.module.js",
+          "jsm/": "https://cdn.jsdelivr.net/npm/three@0.161/examples/jsm/"
+        }
+			}
+		</script>
+</head>
+
+<body>
+
+  <div class="Navbar--Y">
+    <div class="Text--Logo">
+      <h1>Earth View</h1>
+    </div>
+
+    <div class="input--Navbar">
+      <input type="text" name="Search" placeholder="Pesquisa" />
+    </div>
+
+    <div class="Navbar--filter">
+      <div class="filter-dropdown">
+        <i id="filterButton" class="ri-filter-3-line">Filtrar</i>
+        <div id="selectedCompanies"></div>
+        <div id="filterOptions" class="dropdown-content">
+          <label><input type="checkbox" name="company" value="SpaceX"> SpaceX</label>
+          <label><input type="checkbox" name="company" value="Boeing"> Boeing</label>
+          <label><input type="checkbox" name="company" value="Lockheed Martin"> Lockheed Martin</label>
+          <label><input type="checkbox" name="company" value="Northrop Grumman"> Northrop Grumman</label>
+          <label><input type="checkbox" name="company" value="Thales Alenia Space"> Thales Alenia Space</label>
+          <label><input type="checkbox" name="company" value="Airbus Defence and Space"> Airbus Defence and Space</label>
+          <label><input type="checkbox" name="company" value="Maxar Technologies"> Maxar Technologies</label>
+          <label><input type="checkbox" name="company" value="OneWeb"> OneWeb</label>
+          <label><input type="checkbox" name="company" value="Amazon Kuiper"> Amazon Kuiper</label>
+          <label><input type="checkbox" name="company" value="SES S.A."> SES S.A.</label>
+          <label><input type="checkbox" name="company" value="Iridium Communications"> Iridium Communications</label>
+          <label><input type="checkbox" name="company" value="Eutelsat"> Eutelsat</label>
+          <label><input type="checkbox" name="company" value="Inmarsat"> Inmarsat</label>
+          <label><input type="checkbox" name="company" value="Hughes Network Systems"> Hughes Network Systems</label>
+          <label><input type="checkbox" name="company" value="ViaSat"> ViaSat</label>
+          <label><input type="checkbox" name="company" value="Planet Labs"> Planet Labs</label>
+          <label><input type="checkbox" name="company" value="Blue Canyon Technologies"> Blue Canyon Technologies</label>
+          <label><input type="checkbox" name="company" value="OHB SE"> OHB SE</label>
+          <label><input type="checkbox" name="company" value="Rocket Lab"> Rocket Lab</label>
+          <label><input type="checkbox" name="company" value="Telesat"> Telesat</label>
+        </div>
+      </div>
+    </div>
+
+    <div class="Navbar--Satelites">
+     
+    </div>
+    
+  </div>
+
+  <script type="module" src="index.js"></script>
+  <script src="./script.js"></script>
+  <script src="./satelites.js"></script>
+</body>
+
+</html>
